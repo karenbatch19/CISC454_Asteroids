@@ -1,0 +1,14 @@
+﻿  world.cpp
+  strokefont.cpp
+  ship.cpp
+  shell.cpp
+  object.cpp
+  main.cpp
+  linalg.cpp
+  gpuProgram.cpp
+  fg_stroke.cpp
+  asteroid.cpp
+  Generating Code...
+  glad.c
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  a1.vcxproj -> C:\Users\Karen\Documents\GitHub\CISC454_Graphics\a1\x64\Debug\a1.exe

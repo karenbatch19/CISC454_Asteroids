@@ -1,0 +1,105 @@
+	CISC 454 Assignment 1 - Asteroids
+---------------------------------
+
+You will implement an Asteroids game by extending the skeleton code
+provided in this directory.  454 student may work in pairs; 854
+students must work alone.
+
+
+Compile the code
+----------------
+
+   On Linux:
+     make
+
+   On Windows:
+     Instructions will be provided on the course web site.
+
+
+Run the code
+------------
+
+Run the code and verify that a window pops up with some green text.
+
+
+Read the code
+-------------
+
+Read *all* of the code to get a general understanding of it.  This
+should take a couple of hours and will help a great deal later on.
+
+
+Modify the code
+---------------
+
+All modifications are done in places with a comment saying "YOUR CODE
+HERE":
+
+1. [DONE] Modify Object::modelToWorldTransform() to return the 4x4 transform
+   that maps object points to the world coordinate system.  An Object
+   has a position, orientation, and a scale factor, all of which must
+   be incorporated into the model-to-world transform.  [1 mark]
+
+2. [DONE] Modify Object::setupVAO() to set up the VAO that defines the object
+   segments.  [1 mark]
+
+3. [DONE] Modify Object::draw() to draw the object in the correct position
+   and orientation.  You'll first need to find the model-to-view
+   transform.  [1 mark]
+
+   At this point, you can run the program and see the asteroids and
+   ship in their initial positions.
+
+4. [DONE] Modify Ship::addThrust() to change the velocity.  Use
+   SHIP_THRUST_ACCEL, deltaT, and the current ship orientation.
+   Modify Ship::rotateCW() to rotate the ship clockwise.  [1 mark]
+
+   At this point, you should be able to move the ship around.
+
+5. [DONE] Modify Segment::intersects() to determine whether two segments
+   intersect.  [1 mark]
+
+   At this point, ship/asteroid collisions should be detected.
+
+6. [DONE] Modify Ship::fireShell() to set the initial state of a shell that
+   is fired from the nose of the ship  [1 mark]
+
+7. [DONE] Modify World::updateState() to check for shell/asteroid collisions and
+   to update the asteroids upon any such collisions.  [3 marks] 
+
+8. Optionally, implement additional features.  Up to [3 bonus marks]
+   can be awarded for additional features.  You could have 3D
+   asteroids (e.g. spinning) but still play on a flat plane.  Or you
+   could implement a flying saucer as in the original game.  Or have a
+   shield.  Or have a number of lives that are shown on the screen and
+   decremented.  There are lots of Asteroid variants on the web to
+   give you ideas.
+
+
+Submit the code
+---------------
+
+Create a new directory called 'a1'.
+
+Copy ONLY THESE FILES into that directory:
+
+   *.cpp
+   *.h
+   *.vert
+   *.frag
+   Makefile     (only if you are building on Linux)
+   README.txt   (must contain the names, Queen's net ID, and student numbers
+                of each person, and *may* contain comments you have
+                for the TA, such as a description of extra
+                modifications you made.)
+            
+Create an archive (zip or tar gzip) of that directory, named 'a1.zip'
+or 'a1.tgz'.
+
+Submit the archive through OnQ.
+
+[1 mark] for following these submission instructions correctly.  ANY
+DEVIATION FROM THESE SUBMISSION INSTRUCTIONS (such as including
+Windows project files, or including a __MACOSX directory, or not
+providing the required information in the README.txt file) will result
+in zero marks here.
