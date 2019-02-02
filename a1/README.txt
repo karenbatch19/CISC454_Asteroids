@@ -6,13 +6,8 @@
 
 Students:
 ------------------------------
-Name: 		Karen Batch
-NedID:		14kb55
-Student No:	10188125
-
-Name:		Mitch Mathieu
-NetID:		14mm37
-Student No:	10157108
+Karen Batch
+Mitch Mathieu
 
 
 Additional Functionality:
